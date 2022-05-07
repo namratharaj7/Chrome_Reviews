@@ -5,12 +5,13 @@
 
 
 # importing necessary libraries & packages
+import streamlit as st
 import pandas as pd
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 nltk.download('vader_lexicon')
 from textblob import TextBlob
-import streamlit as st
+
 
 
 # In[87]:
