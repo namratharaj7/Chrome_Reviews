@@ -18,7 +18,6 @@ from textblob import TextBlob
 
 # In[87]:
 import os
-os.chdir('C:\\Users\\Namratha')
 
 #reading the csv file of the chrome_review dataset
 df =  pd.read_csv('C:\\Users\\Namratha\\Desktop\\datasets\\archive (1)\\chrome_reviews.csv')
