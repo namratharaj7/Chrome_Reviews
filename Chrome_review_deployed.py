@@ -20,8 +20,7 @@ from textblob import TextBlob
 
 
 #reading the csv file of the chrome_review dataset
-df =  pd.read_csv('C:\\Users\\Namratha\\Desktop\\Chrome_review\\chrome_reviews.csv')
-
+df =  pd.read_csv('C:\\Users\\Namratha\\Chrome_review\\chrome_reviews.csv')
 
 # In[88]:
 
