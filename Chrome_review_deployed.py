@@ -6,6 +6,8 @@
 
 # importing necessary libraries & packages
 import streamlit as st
+# defining the title of the web app
+st.title("Chrome Reviews having Positive Text Reviews with Negative Ratings")
 import pandas as pd
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
@@ -18,7 +20,7 @@ from textblob import TextBlob
 
 
 #reading the csv file of the chrome_review dataset
-df =  pd.read_csv('C:/Users/Namratha/Desktop/datasets/archive (1)/chrome_reviews.csv')
+df =  pd.read_csv('C:\\Users\\Namratha\\Desktop\\datasets\\archive (1)\\chrome_reviews.csv')
 
 
 # In[88]:
@@ -108,9 +110,6 @@ df_discrepency_reviews = df[(df['S_polarity'] >= 0.6) & (df['Star'] <3) & (df['S
 
 # In[101]:
 
-
-# defining the title of the web app
-st.title("Chrome Reviews having Positive Text Reviews with Negative Ratings")
 
 # Creating to CSV file upload option
 uploaded_file = st.file_uploader("Choose a CSV file for checking review-rating discrepancy",type=["csv"])
