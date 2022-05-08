@@ -21,7 +21,7 @@ import os
 os.chdir('C:\\Users\\Namratha')
 
 #reading the csv file of the chrome_review dataset
-df =  pd.read_csv('C:\\Users\\Namratha\\Chrome_review\\chrome_reviews.csv')
+df =  pd.read_csv('C:\\Users\\Namratha\\Desktop\\datasets\\archive (1)\\chrome_reviews.csv')
 
 # In[88]:
 
