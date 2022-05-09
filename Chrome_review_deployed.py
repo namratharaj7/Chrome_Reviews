@@ -4,10 +4,12 @@
 # In[86]:
 
 
-# importing necessary libraries & packages
+# importing streamlit needed for web deployment
 import streamlit as st
 # defining the title of the web app
-st.title("Chrome Reviews having Positive Text Reviews with Negative Ratings")
+st.title("Chrome Reviews having Positive Text Reviews with Negative Star Ratings")
+
+# importing other necessary libraries & packages
 import pandas as pd
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
@@ -120,6 +122,6 @@ if uploaded_file is not None:
     df_test['Sentiment']=df_test['Text'].apply(sentiment_analyse)
     df_test['S_polarity'] = df_test['Text'].apply(find_pol)
     df_test_discrepency_reviews = df_test[(df_test['S_polarity'] >= 0.6) & (df_test['Star'] <3) & (df_test['Sentiment']=='Positive')]
-    # Display of reviews having good text reviews & negative ratings on web app using streamlit
+    # Display of reviews having good text reviews & negative star ratings on web app using streamlit
     st.write("The list of reviews data having reviews and ratings mismatch:")
     st.write(df_test_discrepency_reviews)
